@@ -7,7 +7,7 @@ import './component/Design.css';
 function App() {
   return (
     <>
-    <Major/>
+    <Major/>  
     {/* <Postercard/> */}
     </> 
   )

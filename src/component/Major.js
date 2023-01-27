@@ -2,7 +2,6 @@ import React,{useState,useEffect} from "react";
 
 import Postercard from "./Postercard";
 
-
 let API_key="&api_key=5a1a8553560e386450bcb23bcb286d52";
 let Base_url="https://api.themoviedb.org/3";
 let url=Base_url+"/discover/movie?sort_by=popularity.desc"+API_key;
@@ -66,7 +65,7 @@ const Major=()=>{
             <nav>
             {/* <a href="#"><img src="./Brand-logo.png" alt="brandN" width={130} height={40}></img></a> */}
                 <ul>
-                    <section><a href="#"><img src="./logobrand0.2.jpg" alt="brandN" width={180} height={50}></img></a></section>
+                    <section><a href="#"><img src="https://filmitism.netlify.app/logobrand0.2.jpg" alt="brandN" width={180} height={50}></img></a></section>
                     {
                         mlist.map((value)=>{
                             return(
@@ -80,7 +79,7 @@ const Major=()=>{
             </nav>
             <form>
                 <div className="search-tab">
-                    <input type={'text'} placeholder="Enter Film Name" className="film-text" onChange={(e)=>{setSearch(e.target.value)}} value={search} onKeyDown={searchfilm} ></input>
+                    <input type={'text'} placeholder="Enter Film Name" className="film-text" value={search} onChange={(e)=>{setSearch(e.target.value)}}  onKeyDown={searchfilm} ></input>
                     <button onClick={serachbtn}><i className="fa-solid fa-magnifying-glass-arrow-right sicon"></i></button>
                 </div>
             </form>
